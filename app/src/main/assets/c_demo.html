@@ -1,0 +1,28 @@
+<p>Factorial Program c++</p>
+<!-- <pre class="prettyprint linenums"> -->
+<pre class="prettyprint">
+<code lang="c++">
+    #include <iostream>
+    using namespace std;
+    int main()
+    {
+    unsigned int n;
+    unsigned long long factorial = 1;
+    cout << "Enter a positive integer: ";
+    cin >> n;
+    for(int i = 1; i <=n; ++i)
+    {
+    factorial *= i;
+    }
+    cout << "Factorial of " << n << " = " << factorial;
+    return 0;
+    }
+
+    Output:
+    Enter a positive integer: 12
+    Factorial of 12 = 479001600
+
+</code>
+</pre>
+<script src="run_prettify.js"></script>
+<link rel="stylesheet" href="sunburst.css">

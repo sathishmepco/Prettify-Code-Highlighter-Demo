@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_java">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.cdac.androidcodehighlighter.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_java"
+        android:name="com.cdac.androidcodehighlighter.JavaCodeFragment"
+        android:label="@string/title_java"
+        tools:layout="@layout/fragment_java" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.cdac.androidcodehighlighter.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_c"
+        android:name="com.cdac.androidcodehighlighter.CCodeFragment"
+        android:label="@string/title_c"
+        tools:layout="@layout/fragment_c" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.cdac.androidcodehighlighter.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_python"
+        android:name="com.cdac.androidcodehighlighter.PythonCodeFragment"
+        android:label="@string/title_python"
+        tools:layout="@layout/fragment_python" />
 </navigation>

@@ -22,11 +22,9 @@ public class PythonCodeFragment extends Fragment {
 
     private void loadCode(){
         webView.getSettings().setJavaScriptEnabled(true);
-//        webView.getSettings().setLoadWithOverviewMode(true);
-//        webView.getSettings().setUseWideViewPort(true);
+        webView.setInitialScale(200);
         webView.getSettings().setBuiltInZoomControls(true);
         webView.getSettings().setDisplayZoomControls(false);
-        webView.setScrollContainer(false);
         webView.loadUrl("file:///android_asset/python_demo.html");
     }
 }

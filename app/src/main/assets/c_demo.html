@@ -1,28 +1,51 @@
-<p>Factorial Program in c++</p>
+<h2>Factorial Program in c++</h2>
 <!-- <pre class="prettyprint linenums"> -->
-<pre class="prettyprint">
-<code lang="c++">
-    #include <iostream>
+<thml>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script src="run.js"></script>
+        <link rel="stylesheet" href="sunburst.css">
+    </head>
+    <body>
+    <pre class="prettyprint">
+    <code lang="c++">
+/*
+    Factorial of n is the product of all positive
+        descending integers.
+    Factorial of n is denoted by n!.
+    For example:
+    4! = 4*3*2*1 = 24
+    5! = 5*4*3*2*1 = 120
+*/
+    #include &lt;iostream&gt;
     using namespace std;
     int main()
     {
-    unsigned int n;
-    unsigned long long factorial = 1;
-    cout << "Enter a positive integer: ";
-    cin >> n;
-    for(int i = 1; i <=n; ++i)
-    {
-    factorial *= i;
-    }
-    cout << "Factorial of " << n << " = " << factorial;
-    return 0;
+        unsigned int n;
+        unsigned long long factorial = 1;
+
+        cout << "Enter a positive integer: ";
+        cin >> n;
+
+        for(int i = 1; i <=n; ++i)
+        {
+            factorial *= i;
+        }
+
+        cout << "Factorial of " << n << " is: " << factorial;
+        return 0;
     }
 
-    Output:
-    Enter a positive integer: 12
-    Factorial of 12 = 479001600
+/*
+    OUTPUT
 
-</code>
-</pre>
-<script src="run_prettify.js"></script>
-<link rel="stylesheet" href="sunburst.css">
+    Factorial of 5 is: 120
+    Factorial of 6 is: 720
+    Factorial of 4 is: 24
+    Factorial of 12 is: 479001600
+
+*/
+    </code>
+    </pre>
+    </body>
+</thml>

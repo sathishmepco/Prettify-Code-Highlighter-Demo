@@ -25,9 +25,9 @@ public class JavaCodeFragment extends Fragment {
 //        webView.getSettings().setLoadWithOverviewMode(true);
 //        webView.getSettings().setUseWideViewPort(true);
 //        webView.setScrollContainer(false);
-        webView.setInitialScale(250);
+        webView.setInitialScale(200);
         webView.getSettings().setBuiltInZoomControls(true);
         webView.getSettings().setDisplayZoomControls(false);
-        webView.loadUrl("file:///android_asset/test.html");
+        webView.loadUrl("file:///android_asset/java_demo.html");
     }
 }

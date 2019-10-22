@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Android - Code Highlighter</string>
+    <string name="app_name">Prettify - Code Highlighter</string>
     <string name="title_java">Java</string>
     <string name="title_c">C++</string>
     <string name="title_python">Python</string>

@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
@@ -25,7 +27,16 @@ public class JavaCodeFragment extends Fragment {
 //        webView.getSettings().setLoadWithOverviewMode(true);
 //        webView.getSettings().setUseWideViewPort(true);
 //        webView.setScrollContainer(false);
-        webView.setInitialScale(200);
+        float density = getActivity().getResources().getDisplayMetrics().density;
+        int initialScaleLevel = 100;
+        if(density == 3){
+            initialScaleLevel = 190;
+        }else if(density == 2){
+            initialScaleLevel = 130;
+        }else if(density == 4){
+            initialScaleLevel = 240;
+        }
+        webView.setInitialScale(initialScaleLevel);
         webView.getSettings().setBuiltInZoomControls(true);
         webView.getSettings().setDisplayZoomControls(false);
         webView.loadUrl("file:///android_asset/java_demo.html");

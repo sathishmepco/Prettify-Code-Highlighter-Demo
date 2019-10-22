@@ -22,7 +22,16 @@ public class PythonCodeFragment extends Fragment {
 
     private void loadCode(){
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.setInitialScale(200);
+        float density = getActivity().getResources().getDisplayMetrics().density;
+        int initialScaleLevel = 100;
+        if(density == 3){
+            initialScaleLevel = 190;
+        }else if(density == 2){
+            initialScaleLevel = 130;
+        }else if(density == 4){
+            initialScaleLevel = 240;
+        }
+        webView.setInitialScale(initialScaleLevel);
         webView.getSettings().setBuiltInZoomControls(true);
         webView.getSettings().setDisplayZoomControls(false);
         webView.loadUrl("file:///android_asset/python_demo.html");

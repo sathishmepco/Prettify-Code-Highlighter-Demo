@@ -5,7 +5,7 @@ Prettify Code Highlighter demo in Android
 - Google Code Prettify [Github](https://github.com/google/code-prettify)
 
 ## Download the apk file
-<a href="/Code Highlighter.apk?raw=true" download="Prettify Code Highlighter.apk" target="_blank"> Download Prettify Code Highlighter Apk </a>
+<a href="/Prettify Code Highlighter.apk?raw=true" download="Prettify Code Highlighter.apk" target="_blank"> Download Prettify Code Highlighter Apk </a>
 
 ## Screenshots
 <img src="/Screen1.png"/>
